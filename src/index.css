@@ -1,0 +1,121 @@
+:root {
+  color: #1f2937;
+  background: #f8fafc;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.navigation-bar {
+  align-items: center;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 6px 20px rgb(15 23 42 / 8%);
+  display: flex;
+  justify-content: space-between;
+  min-height: 72px;
+  padding: 0 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navigation-bar__brand {
+  align-items: center;
+  color: #111827;
+  display: inline-flex;
+  gap: 0.75rem;
+  min-width: 0;
+  text-decoration: none;
+}
+
+.navigation-bar__logo {
+  flex: 0 0 auto;
+  height: 42px;
+  width: 42px;
+}
+
+.navigation-bar__title {
+  font-size: clamp(1.1rem, 4vw, 1.55rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.navigation-bar__menu {
+  align-items: center;
+  background: #111827;
+  border: 0;
+  border-radius: 0.85rem;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.32rem;
+  height: 46px;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 160ms ease, transform 160ms ease;
+  width: 46px;
+}
+
+.navigation-bar__menu:hover {
+  background: #374151;
+  transform: translateY(-1px);
+}
+
+.navigation-bar__menu:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 3px;
+}
+
+.navigation-bar__menu-line {
+  background: #ffffff;
+  border-radius: 999px;
+  display: block;
+  height: 3px;
+  width: 22px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 2rem 1.5rem;
+}
+
+@media (max-width: 520px) {
+  .navigation-bar {
+    min-height: 64px;
+    padding: 0 1rem;
+  }
+
+  .navigation-bar__brand {
+    gap: 0.55rem;
+  }
+
+  .navigation-bar__logo {
+    height: 36px;
+    width: 36px;
+  }
+
+  .navigation-bar__title {
+    font-size: 1rem;
+    white-space: normal;
+  }
+}

@@ -1,8 +1,14 @@
+import NavigationBar from "./components/NavegationBar";
 import AppRoutes from "./routes/AppRoutes";
 
 
 function App() {
-  return <AppRoutes />;
+  return (
+    <>
+      <NavigationBar />
+      <AppRoutes />
+    </>
+  );
 }
 
 
