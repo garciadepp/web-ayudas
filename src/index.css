@@ -119,3 +119,24 @@ main {
     white-space: normal;
   }
 }
+
+.navigation-bar__logout {
+  background: #dc2626;
+  border: 0;
+  border-radius: 999px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.75rem 1.15rem;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.navigation-bar__logout:hover {
+  background: #b91c1c;
+  transform: translateY(-1px);
+}
+
+.navigation-bar__logout:focus-visible {
+  outline: 3px solid #fca5a5;
+  outline-offset: 3px;
+}
